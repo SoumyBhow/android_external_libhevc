@@ -106,6 +106,7 @@
 *******************************************************************************
 */
 
+__attribute__ ((target("sse4.2")))
 void ihevc_inter_pred_luma_copy_w16out_sse42(UWORD8 *pu1_src,
                                              WORD16 *pi2_dst,
                                              WORD32 src_strd,
@@ -454,6 +455,7 @@ void ihevc_inter_pred_chroma_copy_sse42(UWORD8 *pu1_src,
 *******************************************************************************
 */
 
+__attribute__ ((target("sse4.2")))
 void ihevc_inter_pred_chroma_copy_w16out_sse42(UWORD8 *pu1_src,
                                                WORD16 *pi2_dst,
                                                WORD32 src_strd,

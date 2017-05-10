@@ -108,6 +108,7 @@
 *******************************************************************************
 */
 
+__attribute__ ((target("sse4.2")))
 void ihevc_weighted_pred_uni_sse42(WORD16 *pi2_src,
                                    UWORD8 *pu1_dst,
                                    WORD32 src_strd,
@@ -407,6 +408,7 @@ void ihevc_weighted_pred_uni_sse42(WORD16 *pi2_src,
 *******************************************************************************
 */
 
+__attribute__ ((target("sse4.2")))
 void ihevc_weighted_pred_chroma_uni_sse42(WORD16 *pi2_src,
                                           UWORD8 *pu1_dst,
                                           WORD32 src_strd,
@@ -1244,6 +1246,7 @@ void ihevc_weighted_pred_chroma_uni_sse42(WORD16 *pi2_src,
 *******************************************************************************
 */
 
+__attribute__ ((target("sse4.2")))
 void ihevc_weighted_pred_bi_sse42(WORD16 *pi2_src1,
                                   WORD16 *pi2_src2,
                                   UWORD8 *pu1_dst,
@@ -1513,6 +1516,7 @@ void ihevc_weighted_pred_bi_sse42(WORD16 *pi2_src1,
 *******************************************************************************
 */
 
+__attribute__ ((target("sse4.2")))
 void ihevc_weighted_pred_chroma_bi_sse42(WORD16 *pi2_src1,
                                          WORD16 *pi2_src2,
                                          UWORD8 *pu1_dst,

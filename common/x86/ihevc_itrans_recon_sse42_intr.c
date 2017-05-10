@@ -108,6 +108,7 @@
  */
 
 
+__attribute__ ((target("sse4.2")))
 void ihevc_itrans_recon_4x4_ttype1_sse42(WORD16 *pi2_src,
                                          WORD16 *pi2_tmp,
                                          UWORD8 *pu1_pred,
@@ -438,6 +439,7 @@ void ihevc_itrans_recon_4x4_ttype1_sse42(WORD16 *pi2_src,
  *******************************************************************************
  */
 
+__attribute__ ((target("sse4.2")))
 void ihevc_itrans_recon_4x4_sse42(WORD16 *pi2_src,
                                   WORD16 *pi2_tmp,
                                   UWORD8 *pu1_pred,

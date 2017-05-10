@@ -119,6 +119,7 @@
 *******************************************************************************
 */
 
+__attribute__ ((target("sse4.2")))
 void ihevc_intra_pred_chroma_planar_sse42(UWORD8 *pu1_ref,
                                           WORD32 src_strd,
                                           UWORD8 *pu1_dst,
@@ -273,6 +274,7 @@ void ihevc_intra_pred_chroma_planar_sse42(UWORD8 *pu1_ref,
 *******************************************************************************
 */
 
+__attribute__ ((target("sse4.2")))
 void ihevc_intra_pred_chroma_dc_sse42(UWORD8 *pu1_ref,
                                       WORD32 src_strd,
                                       UWORD8 *pu1_dst,

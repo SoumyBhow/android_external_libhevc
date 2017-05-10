@@ -118,6 +118,7 @@
 */
 
 
+__attribute__ ((target("sse4.2")))
 void ihevc_intra_pred_ref_filtering_sse42(UWORD8 *pu1_src,
                                           WORD32 nt,
                                           UWORD8 *pu1_dst,
@@ -394,6 +395,7 @@ void ihevc_intra_pred_ref_filtering_sse42(UWORD8 *pu1_src,
 *******************************************************************************
 */
 
+__attribute__ ((target("sse4.2")))
 void ihevc_intra_pred_luma_dc_sse42(UWORD8 *pu1_ref,
                                     WORD32 src_strd,
                                     UWORD8 *pu1_dst,
@@ -926,6 +928,7 @@ void ihevc_intra_pred_luma_dc_sse42(UWORD8 *pu1_ref,
 *******************************************************************************
 */
 
+__attribute__ ((target("sse4.2")))
 void ihevc_intra_pred_luma_horz_sse42(UWORD8 *pu1_ref,
                                       WORD32 src_strd,
                                       UWORD8 *pu1_dst,
@@ -1194,6 +1197,7 @@ void ihevc_intra_pred_luma_horz_sse42(UWORD8 *pu1_ref,
 */
 
 
+__attribute__ ((target("sse4.2")))
 void ihevc_intra_pred_luma_ver_sse42(UWORD8 *pu1_ref,
                                      WORD32 src_strd,
                                      UWORD8 *pu1_dst,
@@ -1410,6 +1414,7 @@ void ihevc_intra_pred_luma_ver_sse42(UWORD8 *pu1_ref,
 */
 
 
+__attribute__ ((target("sse4.2")))
 void ihevc_intra_pred_luma_mode_3_to_9_sse42(UWORD8 *pu1_ref,
                                              WORD32 src_strd,
                                              UWORD8 *pu1_dst,
@@ -1947,6 +1952,7 @@ void ihevc_intra_pred_luma_mode_3_to_9_sse42(UWORD8 *pu1_ref,
 */
 
 
+__attribute__ ((target("sse4.2")))
 void ihevc_intra_pred_luma_mode_11_to_17_sse42(UWORD8 *pu1_ref,
                                                WORD32 src_strd,
                                                UWORD8 *pu1_dst,
@@ -2786,6 +2792,7 @@ void ihevc_intra_pred_luma_mode_11_to_17_sse42(UWORD8 *pu1_ref,
 */
 
 
+__attribute__ ((target("sse4.2")))
 void ihevc_intra_pred_luma_mode_19_to_25_sse42(UWORD8 *pu1_ref,
                                                WORD32 src_strd,
                                                UWORD8 *pu1_dst,
@@ -3555,6 +3562,7 @@ void ihevc_intra_pred_luma_mode_19_to_25_sse42(UWORD8 *pu1_ref,
 */
 
 
+__attribute__ ((target("sse4.2")))
 void ihevc_intra_pred_luma_mode_27_to_33_sse42(UWORD8 *pu1_ref,
                                                WORD32 src_strd,
                                                UWORD8 *pu1_dst,
