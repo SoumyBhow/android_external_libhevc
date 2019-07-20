@@ -343,9 +343,8 @@ cc_library_static {
             cflags: [
                 "-DX86",
                 "-DDISABLE_AVX2",
-                "-msse4.2",
                 "-mno-avx",
-                "-DDEFAULT_ARCH=D_ARCH_X86_SSE42",
+                "-DDEFAULT_ARCH=D_ARCH_X86_SSE3",
             ],
 
             local_include_dirs: [
